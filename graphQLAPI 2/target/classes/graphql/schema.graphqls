@@ -1,0 +1,13 @@
+scalar LocalDate
+
+type Query  {
+	allUser: [User]
+}
+
+type Mutation {
+    addUser(userInput: UserInput!): User!
+    updateUser(userId: Int!, userInput:UserInput!): User!
+    deleteUser(userId: Int!): User!
+    addPost(postInput: PostInput!): Post!
+}
+
